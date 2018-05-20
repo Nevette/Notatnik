@@ -27,12 +27,9 @@ public class BazaDanych extends SQLiteOpenHelper {
 
     private static final String[] KOLUMNY_NOTATEK = {ID_NOTATKI, TYTUL_NOTATKI, TRESC_NOTATKI};
 
-
     public BazaDanych(Context context) {
         super(context, BAZA_NOTATEK, null, WERSJA_BAZY);
     }
-
-
 
     public void dodajNotatke(Notatka notatka)
     {
